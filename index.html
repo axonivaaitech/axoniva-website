@@ -100,7 +100,7 @@ a{text-decoration:none;color:inherit;}
 @keyframes marquee{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 
 /* ── TAGLINE BLOCK ── */
-.tagline-block{background:var(--blue2);padding:56px 0;text-align:center;}
+.tagline-block{background:var(--blue2);padding:36px 0;text-align:center;}
 .tl-main{font-family:var(--fd);font-weight:900;font-size:clamp(28px,4vw,52px);color:#fff;letter-spacing:-1px;margin-bottom:8px;}
 .tl-sub{font-family:var(--fd);font-weight:500;font-size:clamp(14px,1.8vw,18px);color:rgba(255,255,255,0.65);letter-spacing:2px;text-transform:uppercase;margin-bottom:36px;}
 .tl-stats{display:flex;justify-content:center;gap:56px;flex-wrap:wrap;}
@@ -109,17 +109,17 @@ a{text-decoration:none;color:inherit;}
 .tls-l{font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.55);margin-top:4px;}
 
 /* ── SECTION COMMONS ── */
-section{padding:72px 0;}
+section{padding:48px 0;}
 .s-chip{display:inline-flex;align-items:center;gap:8px;font-family:var(--fd);font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--blue2);margin-bottom:12px;}
 .s-chip::before{content:'';width:20px;height:2px;background:var(--blue2);border-radius:2px;}
-.s-h2{font-family:var(--fd);font-weight:800;font-size:clamp(28px,3.5vw,44px);color:var(--navy);line-height:1.12;letter-spacing:-0.8px;margin-bottom:14px;}
+.s-h2{font-family:var(--fd);font-weight:800;font-size:clamp(26px,3.5vw,40px);color:var(--navy);line-height:1.12;letter-spacing:-0.8px;margin-bottom:10px;}
 .s-h2 em{font-style:normal;color:var(--blue2);}
-.s-p{font-size:15px;color:var(--muted);max-width:520px;line-height:1.8;}
+.s-p{font-size:14px;color:var(--muted);max-width:520px;line-height:1.7;margin-bottom:0;}
 
 /* ── WHY CLAUDE ── */
 .claude-sect{background:var(--off);}
 .claude-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;}
-.claude-feats{display:flex;flex-direction:column;gap:16px;margin-top:32px;}
+.claude-feats{display:flex;flex-direction:column;gap:10px;margin-top:20px;}
 .cf{display:flex;gap:16px;align-items:flex-start;background:var(--white);border:1px solid var(--border);border-radius:12px;padding:20px;transition:all .25s;box-shadow:var(--shadow-sm);}
 .cf:hover{border-color:#BFDBFE;box-shadow:var(--shadow);transform:translateX(4px);}
 .cf-ico{width:40px;height:40px;border-radius:10px;background:var(--blue-md);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;}
@@ -140,7 +140,7 @@ section{padding:72px 0;}
 .cv-bar-val{font-family:var(--fd);font-size:11px;font-weight:600;color:var(--blue2);width:32px;text-align:right;}
 
 /* ── SERVICES ── */
-.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:48px;}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px;}
 .svc-card{background:var(--white);border:1px solid var(--border);border-radius:14px;padding:28px 24px;transition:all .28s;position:relative;overflow:hidden;box-shadow:var(--shadow-sm);}
 .svc-card::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--blue2);transform:scaleX(0);transform-origin:left;transition:transform .3s;}
 .svc-card:hover{border-color:#BFDBFE;box-shadow:var(--shadow);transform:translateY(-4px);}
@@ -164,7 +164,7 @@ section{padding:72px 0;}
 
 /* ── ANDROID SECTION ── */
 .android-sect{background:var(--off);}
-.android-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;margin-top:40px;}
+.android-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start;margin-top:24px;}
 .android-feats{display:flex;flex-direction:column;gap:14px;}
 .af{display:flex;gap:14px;align-items:flex-start;background:var(--white);border:1px solid var(--border);border-radius:12px;padding:18px;box-shadow:var(--shadow-sm);transition:all .25s;}
 .af:hover{border-color:#BFDBFE;box-shadow:var(--shadow);}
@@ -191,7 +191,7 @@ section{padding:72px 0;}
 
 /* ── PROCESS ── */
 .process-sect{text-align:center;}
-.proc-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:48px;position:relative;}
+.proc-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:32px;position:relative;}
 .proc-line{position:absolute;top:28px;left:10%;right:10%;height:1px;background:var(--border);z-index:0;}
 .ps{display:flex;flex-direction:column;align-items:center;gap:12px;position:relative;z-index:1;padding:0 12px;}
 .ps-num{width:56px;height:56px;border-radius:50%;background:var(--white);border:1.5px solid var(--border);display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-weight:800;font-size:18px;color:var(--blue2);transition:all .28s;box-shadow:var(--shadow-sm);}
@@ -200,7 +200,7 @@ section{padding:72px 0;}
 .ps-desc{font-size:11px;color:var(--muted);line-height:1.6;}
 
 /* ── PRICING ── */
-.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:48px;}
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px;}
 .pc{background:var(--white);border:1px solid var(--border);border-radius:16px;padding:32px 28px;transition:all .28s;position:relative;box-shadow:var(--shadow-sm);}
 .pc:hover{border-color:#BFDBFE;box-shadow:var(--shadow);}
 .pc.hot{background:var(--navy);border-color:var(--navy);box-shadow:var(--shadow-lg);}
@@ -271,7 +271,7 @@ footer{background:var(--navy);padding:40px 0;}
 .mob-menu a:hover{background:var(--off);}
 
 /* ── REVEAL ── */
-.reveal{opacity:0;transform:translateY(16px);transition:opacity .5s ease,transform .5s ease;}
+.reveal{opacity:1;transform:translateY(0);transition:opacity .5s ease,transform .5s ease;}
 .reveal.in{opacity:1;transform:translateY(0);}
 .d1{transition-delay:.1s;}.d2{transition-delay:.2s;}.d3{transition-delay:.3s;}
 
@@ -302,7 +302,9 @@ footer{background:var(--navy);padding:40px 0;}
 @media(max-width:600px){
   .wrap{padding:0 16px;}
   .nav-inner{padding:12px 16px;}
-  section{padding:52px 0;}
+  section{padding:36px 0;}
+  .pulse-card{grid-template-columns:1fr!important;}
+  .pulse-cta{text-align:left!important;margin-top:16px;}
   .hero{padding:90px 0 48px;}
   .hero-h1{font-size:34px;}
   .hero-btns{flex-direction:column;}
@@ -600,30 +602,36 @@ footer{background:var(--navy);padding:40px 0;}
 </section>
 
 <!-- AXONIVA PULSE FEATURED PRODUCT -->
-<section style="background:#EEF2FF;padding:56px 0;">
+<section style="background:var(--off);padding:48px 0;">
   <div class="wrap">
-    <div class="s-chip" style="justify-content:center;">🚀 Our Latest Live Product</div>
-    <h2 class="s-h2" style="text-align:center;margin-bottom:8px;">Meet <em>Axoniva Pulse</em></h2>
-    <p class="s-p" style="text-align:center;margin:0 auto 32px;">India's AI-powered finance & markets news platform — free for everyone.</p>
-    <a href="https://pulse.axoniva.in" target="_blank" rel="noopener noreferrer" style="display:block;text-decoration:none;max-width:700px;margin:0 auto;">
-      <div style="background:linear-gradient(135deg,#0A1628 0%,#0F2447 100%);border:1px solid rgba(201,168,76,0.4);border-radius:20px;padding:36px 40px;position:relative;overflow:hidden;box-shadow:0 8px 40px rgba(10,22,40,0.2);transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 20px 60px rgba(10,22,40,0.35)';" onmouseout="this.style.transform='none';this.style.boxShadow='0 8px 40px rgba(10,22,40,0.2)';">
-        <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#C9A84C,#FFD98E,#C9A84C);"></div>
-        <div style="position:absolute;top:20px;right:24px;background:#C9A84C;color:#0A1628;font-size:9px;font-weight:800;padding:4px 12px;border-radius:100px;letter-spacing:0.12em;display:flex;align-items:center;gap:5px;"><span style="width:6px;height:6px;border-radius:50%;background:#DC2626;display:inline-block;"></span>LIVE NOW</div>
-        <div style="display:flex;align-items:center;gap:18px;margin-bottom:16px;">
-          <span style="font-size:44px;line-height:1;">📰</span>
-          <div>
-            <div style="font-size:26px;font-weight:900;color:#FFFFFF;line-height:1.1;">Axoniva <span style="color:#C9A84C;">Pulse</span></div>
-            <div style="font-size:10px;font-weight:700;color:rgba(255,255,255,0.45);letter-spacing:0.12em;text-transform:uppercase;margin-top:4px;">India's AI-Powered Finance News Platform</div>
+    <div class="s-chip">🚀 Our Latest Live Product</div>
+    <h2 class="s-h2">Meet <em>Axoniva Pulse</em></h2>
+    <p class="s-p">India's AI-powered finance & markets news platform — free for everyone.</p>
+    <a href="https://pulse.axoniva.in" target="_blank" rel="noopener noreferrer" style="display:block;text-decoration:none;margin-top:24px;">
+      <div style="background:var(--navy);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:32px 36px;position:relative;overflow:hidden;box-shadow:var(--shadow-lg);transition:transform 0.2s,box-shadow 0.2s;display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center;" class="pulse-card" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 20px 50px rgba(11,20,55,0.25)';" onmouseout="this.style.transform='none';this.style.boxShadow='var(--shadow-lg)';">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:var(--blue2);"></div>
+        <div>
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;">
+            <span style="font-size:36px;line-height:1;">📰</span>
+            <div>
+              <div style="font-size:22px;font-weight:900;color:#fff;line-height:1.1;">Axoniva <span style="color:#60A5FA;">Pulse</span></div>
+              <div style="font-size:10px;font-weight:600;color:rgba(255,255,255,0.4);letter-spacing:0.1em;text-transform:uppercase;margin-top:3px;">India's AI-Powered Finance News Platform</div>
+            </div>
+            <span style="background:#EF4444;color:#fff;font-size:9px;font-weight:800;padding:3px 10px;border-radius:100px;letter-spacing:0.1em;margin-left:8px;display:inline-flex;align-items:center;gap:4px;white-space:nowrap;"><span style="width:5px;height:5px;border-radius:50%;background:#fff;opacity:0.8;display:inline-block;"></span>LIVE</span>
+          </div>
+          <p style="font-size:14px;color:rgba(255,255,255,0.6);line-height:1.65;margin:0 0 16px;max-width:560px;">AI-curated finance & markets news — 5-layer ethical filters, story-level AI chatbot and personalised daily briefing. Powered by Anthropic Claude.</p>
+          <div style="display:flex;gap:6px;flex-wrap:wrap;">
+            <span style="font-family:var(--fd);font-size:10px;font-weight:600;padding:3px 10px;border-radius:100px;background:rgba(37,99,235,0.25);color:#93C5FD;letter-spacing:0.5px;">Claude AI</span>
+            <span style="font-family:var(--fd);font-size:10px;font-weight:600;padding:3px 10px;border-radius:100px;background:rgba(37,99,235,0.25);color:#93C5FD;letter-spacing:0.5px;">React</span>
+            <span style="font-family:var(--fd);font-size:10px;font-weight:600;padding:3px 10px;border-radius:100px;background:rgba(37,99,235,0.25);color:#93C5FD;letter-spacing:0.5px;">Vercel</span>
+            <span style="font-family:var(--fd);font-size:10px;font-weight:600;padding:3px 10px;border-radius:100px;background:rgba(16,185,129,0.2);color:#6EE7B7;letter-spacing:0.5px;">Ethical AI</span>
+            <span style="font-family:var(--fd);font-size:10px;font-weight:600;padding:3px 10px;border-radius:100px;background:rgba(16,185,129,0.2);color:#6EE7B7;letter-spacing:0.5px;">Live News</span>
           </div>
         </div>
-        <p style="font-size:14px;color:rgba(255,255,255,0.68);line-height:1.7;margin:0 0 18px;">AI-curated finance & markets news with 5-layer ethical filters, story-level chatbot and personalised daily briefing — all powered by Anthropic Claude.</p>
-        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px;">
-          <span style="font-size:11px;background:rgba(201,168,76,0.15);color:#C9A84C;padding:4px 10px;border-radius:5px;font-weight:700;border:1px solid rgba(201,168,76,0.3);">Anthropic Claude</span>
-          <span style="font-size:11px;background:rgba(27,95,168,0.2);color:#6DAAFF;padding:4px 10px;border-radius:5px;font-weight:700;">React</span>
-          <span style="font-size:11px;background:rgba(27,95,168,0.2);color:#6DAAFF;padding:4px 10px;border-radius:5px;font-weight:700;">Vercel</span>
-          <span style="font-size:11px;background:rgba(16,185,129,0.15);color:#6EE7B7;padding:4px 10px;border-radius:5px;font-weight:700;">Ethical AI</span>
+        <div style="text-align:right;flex-shrink:0;">
+          <span style="display:inline-flex;align-items:center;gap:8px;background:var(--blue2);color:#fff;padding:12px 22px;border-radius:8px;font-family:var(--fd);font-size:12px;font-weight:700;letter-spacing:0.3px;white-space:nowrap;box-shadow:0 4px 14px rgba(37,99,235,.4);">Visit Pulse →</span>
+          <div style="font-size:11px;color:rgba(255,255,255,0.3);margin-top:8px;">pulse.axoniva.in</div>
         </div>
-        <span style="display:inline-flex;align-items:center;gap:8px;background:#C9A84C;color:#0A1628;padding:12px 24px;border-radius:8px;font-size:12px;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;">Visit pulse.axoniva.in →</span>
       </div>
     </a>
   </div>
