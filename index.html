@@ -109,7 +109,7 @@ a{text-decoration:none;color:inherit;}
 .tls-l{font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.55);margin-top:4px;}
 
 /* ── SECTION COMMONS ── */
-section{padding:48px 0;}
+section{padding:72px 0;}
 .s-chip{display:inline-flex;align-items:center;gap:8px;font-family:var(--fd);font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--blue2);margin-bottom:12px;}
 .s-chip::before{content:'';width:20px;height:2px;background:var(--blue2);border-radius:2px;}
 .s-h2{font-family:var(--fd);font-weight:800;font-size:clamp(28px,3.5vw,44px);color:var(--navy);line-height:1.12;letter-spacing:-0.8px;margin-bottom:14px;}
@@ -302,7 +302,7 @@ footer{background:var(--navy);padding:40px 0;}
 @media(max-width:600px){
   .wrap{padding:0 16px;}
   .nav-inner{padding:12px 16px;}
-  section{padding:36px 0;}
+  section{padding:52px 0;}
   .hero{padding:90px 0 48px;}
   .hero-h1{font-size:34px;}
   .hero-btns{flex-direction:column;}
@@ -387,7 +387,7 @@ footer{background:var(--navy);padding:40px 0;}
         </div>
       </div>
       <!-- TERMINAL -->
-      <div class="terminal">
+      <div class="terminal reveal">
         <div class="t-top">
           <div class="td" style="background:#FF5F57;"></div>
           <div class="td" style="background:#FFBD2E;"></div>
@@ -599,36 +599,6 @@ footer{background:var(--navy);padding:40px 0;}
   </div>
 </section>
 
-<!-- AXONIVA PULSE FEATURED PRODUCT -->
-<section style="background:#EEF2FF;padding:48px 0;">
-  <div class="wrap">
-    <div class="s-chip" style="justify-content:center;">🚀 Our Latest Live Product</div>
-    <h2 class="s-h2" style="text-align:center;margin-bottom:8px;">Meet <em>Axoniva Pulse</em></h2>
-    <p class="s-p" style="text-align:center;margin:0 auto 28px;">India's AI-powered finance & markets news platform — free for everyone.</p>
-    <a href="https://pulse.axoniva.in" target="_blank" rel="noopener noreferrer" style="display:block;text-decoration:none;max-width:700px;margin:0 auto;">
-      <div style="background:linear-gradient(135deg,#0A1628 0%,#0F2447 100%);border:1px solid rgba(201,168,76,0.4);border-radius:20px;padding:32px 36px;position:relative;overflow:hidden;box-shadow:0 8px 40px rgba(10,22,40,0.2);transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 20px 60px rgba(10,22,40,0.35)';" onmouseout="this.style.transform='none';this.style.boxShadow='0 8px 40px rgba(10,22,40,0.2)';">
-        <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#C9A84C,#FFD98E,#C9A84C);"></div>
-        <div style="position:absolute;top:18px;right:20px;background:#C9A84C;color:#0A1628;font-size:9px;font-weight:800;padding:3px 10px;border-radius:100px;letter-spacing:0.12em;display:flex;align-items:center;gap:5px;"><span style="width:6px;height:6px;border-radius:50%;background:#DC2626;display:inline-block;"></span>LIVE NOW</div>
-        <div style="display:flex;align-items:center;gap:16px;margin-bottom:14px;">
-          <span style="font-size:40px;line-height:1;">📰</span>
-          <div>
-            <div style="font-size:24px;font-weight:900;color:#FFFFFF;line-height:1.1;">Axoniva <span style="color:#C9A84C;">Pulse</span></div>
-            <div style="font-size:10px;font-weight:700;color:rgba(255,255,255,0.45);letter-spacing:0.12em;text-transform:uppercase;margin-top:3px;">India's AI-Powered Finance News Platform</div>
-          </div>
-        </div>
-        <p style="font-size:14px;color:rgba(255,255,255,0.68);line-height:1.65;margin:0 0 16px;">AI-curated finance & markets news — ethical content filters, story-level AI chatbot and personalised daily briefing. Powered by Anthropic Claude. Free for everyone.</p>
-        <div style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:20px;">
-          <span style="font-size:11px;background:rgba(201,168,76,0.15);color:#C9A84C;padding:3px 9px;border-radius:5px;font-weight:700;border:1px solid rgba(201,168,76,0.3);">Anthropic Claude</span>
-          <span style="font-size:11px;background:rgba(27,95,168,0.2);color:#6DAAFF;padding:3px 9px;border-radius:5px;font-weight:700;">React</span>
-          <span style="font-size:11px;background:rgba(27,95,168,0.2);color:#6DAAFF;padding:3px 9px;border-radius:5px;font-weight:700;">Vercel</span>
-          <span style="font-size:11px;background:rgba(16,185,129,0.15);color:#6EE7B7;padding:3px 9px;border-radius:5px;font-weight:700;">Ethical AI</span>
-        </div>
-        <span style="display:inline-flex;align-items:center;gap:8px;background:#C9A84C;color:#0A1628;padding:11px 22px;border-radius:8px;font-size:12px;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;">Visit pulse.axoniva.in →</span>
-      </div>
-    </a>
-  </div>
-</section>
-
 <!-- PROCESS -->
 <section id="process" class="process-sect">
   <div class="wrap">
@@ -712,7 +682,7 @@ footer{background:var(--navy);padding:40px 0;}
       <div class="contact-info">
         <div class="ci-email reveal">
           <div class="ci-label">📧 Direct Email — Always Open</div>
-          <a href="/cdn-cgi/l/email-protection#472f222b2b2807263f28292e3126692e29" class="ci-addr"><span class="__cf_email__" data-cfemail="c0a8a5acacaf80a1b8afaea9b6a1eea9ae">[email&#160;protected]</span></a>
+          <a href="mailto:hello@axoniva.in" class="ci-addr">hello@axoniva.in</a>
           <p class="ci-note">Studio response within <strong>4 hours</strong> · Free first consultation · All AI ideas welcome</p>
         </div>
         <div class="contact-channels reveal d1">
@@ -720,7 +690,7 @@ footer{background:var(--navy);padding:40px 0;}
           <a href="https://twitter.com/axonivaaitech" class="ch-btn">𝕏 Twitter</a>
           <a href="https://instagram.com/axonivaaitech" class="ch-btn">📸 Instagram</a>
           <a href="https://youtube.com/@axonivaaitech" class="ch-btn">▶ YouTube</a>
-          <a href="/cdn-cgi/l/email-protection#c4aca1a8a8ab84a5bcabaaadb2a5eaadaa" class="ch-btn" style="grid-column:span 2;">📧 <span class="__cf_email__" data-cfemail="422a272e2e2d02233a2d2c2b34236c2b2c">[email&#160;protected]</span></a>
+          <a href="mailto:hello@axoniva.in" class="ch-btn" style="grid-column:span 2;">📧 hello@axoniva.in</a>
         </div>
       </div>
       <div class="cf-form reveal">
@@ -761,13 +731,13 @@ footer{background:var(--navy);padding:40px 0;}
   <div class="wrap">
     <div class="foot">
       <div class="f-brand">AXONIVA <span>AI TECH</span></div>
-      <div class="f-copy">© 2026 Axoniva AI Tech · axoniva.in · Bengaluru, India · <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="afc7cac3c3c0efced7c0c1c6d9ce81c6c1">[email&#160;protected]</a></div>
+      <div class="f-copy">© 2026 Axoniva AI Tech · axoniva.in · Bengaluru, India · hello@axoniva.in</div>
       <div class="f-tag">One Studio. Infinite Intelligence.</div>
     </div>
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 /* TERMINAL */
 (function(){
   const lines=[
@@ -809,9 +779,8 @@ document.querySelectorAll('.reveal').forEach(el=>{
       const d=e.target.classList.contains('d3')?300:e.target.classList.contains('d2')?200:e.target.classList.contains('d1')?100:0;
       setTimeout(()=>e.target.classList.add('in'),d);
     }
-  }),{threshold:.05}).observe(el);
+  }),{threshold:.1}).observe(el);
 });
-setTimeout(()=>document.querySelectorAll('.reveal:not(.in)').forEach(el=>el.classList.add('in')),400);
 
 /* FORM */
 function submitForm(e){
@@ -819,4 +788,17 @@ function submitForm(e){
   const b=document.getElementById('fsub');
   b.textContent='✅ Received! We\'ll reply within 4 hours.';
   b.style.background='#059669';
-  setTimeout(()=>{b.textContent='⚡ Send Your Idea — Let\'s Build It Together';b.style.backgro
+  setTimeout(()=>{b.textContent='⚡ Send Your Idea — Let\'s Build It Together';b.style.background='';e.target.reset();},5000);
+}
+
+/* SMOOTH SCROLL */
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'});}});
+});
+
+/* MOBILE MENU */
+function toggleMenu(){document.getElementById('mob-menu').classList.toggle('open');}
+function closeMenu(){document.getElementById('mob-menu').classList.remove('open');}
+</script>
+</body>
+</html>
