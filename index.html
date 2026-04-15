@@ -628,7 +628,7 @@ footer{background:var(--navy);padding:40px 0;}
             <span style="font-family:var(--fd);font-size:10px;font-weight:600;padding:3px 10px;border-radius:100px;background:rgba(16,185,129,0.2);color:#6EE7B7;letter-spacing:0.5px;">Live News</span>
           </div>
         </div>
-        <div style="text-align:right;flex-shrink:0;">
+        <div style="text-align:right;flex-shrink:0;" class="pulse-cta">
           <span style="display:inline-flex;align-items:center;gap:8px;background:var(--blue2);color:#fff;padding:12px 22px;border-radius:8px;font-family:var(--fd);font-size:12px;font-weight:700;letter-spacing:0.3px;white-space:nowrap;box-shadow:0 4px 14px rgba(37,99,235,.4);">Visit Pulse →</span>
           <div style="font-size:11px;color:rgba(255,255,255,0.3);margin-top:8px;">pulse.axoniva.in</div>
         </div>
@@ -720,7 +720,8 @@ footer{background:var(--navy);padding:40px 0;}
       <div class="contact-info">
         <div class="ci-email reveal">
           <div class="ci-label">📧 Direct Email — Always Open</div>
-          <a href="/cdn-cgi/l/email-protection#bbd3ded7d7d4fbdac3d4d5d2cdda95d2d5" class="ci-addr"><span class="__cf_email__" data-cfemail="cfa7aaa3a3a08faeb7a0a1a6b9aee1a6a1">[email&#160;protected]</span></a>
+          <!-- ✅ UPDATED: hello@axoniva.in → info@axoniva.in -->
+          <a href="mailto:info@axoniva.in" class="ci-addr">info@axoniva.in</a>
           <p class="ci-note">Studio response within <strong>4 hours</strong> · Free first consultation · All AI ideas welcome</p>
         </div>
         <div class="contact-channels reveal d1">
@@ -728,7 +729,8 @@ footer{background:var(--navy);padding:40px 0;}
           <a href="https://twitter.com/axonivaaitech" class="ch-btn">𝕏 Twitter</a>
           <a href="https://instagram.com/axonivaaitech" class="ch-btn">📸 Instagram</a>
           <a href="https://youtube.com/@axonivaaitech" class="ch-btn">▶ YouTube</a>
-          <a href="/cdn-cgi/l/email-protection#c8a0ada4a4a788a9b0a7a6a1bea9e6a1a6" class="ch-btn" style="grid-column:span 2;">📧 <span class="__cf_email__" data-cfemail="ef878a838380af8e97808186998ec18681">[email&#160;protected]</span></a>
+          <!-- ✅ UPDATED: hello@axoniva.in → info@axoniva.in -->
+          <a href="mailto:info@axoniva.in" class="ch-btn" style="grid-column:span 2;">📧 info@axoniva.in</a>
         </div>
       </div>
       <div class="cf-form reveal">
@@ -769,13 +771,14 @@ footer{background:var(--navy);padding:40px 0;}
   <div class="wrap">
     <div class="foot">
       <div class="f-brand">AXONIVA <span>AI TECH</span></div>
-      <div class="f-copy">© 2026 Axoniva AI Tech · axoniva.in · Bengaluru, India · <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f79f929b9b98b7968f98999e8196d99e99">[email&#160;protected]</a></div>
+      <!-- ✅ UPDATED: hello@axoniva.in → info@axoniva.in -->
+      <div class="f-copy">© 2026 Axoniva AI Tech · axoniva.in · Bengaluru, India · <a href="mailto:info@axoniva.in" style="color:rgba(255,255,255,0.3);">info@axoniva.in</a></div>
       <div class="f-tag">One Studio. Infinite Intelligence.</div>
     </div>
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 /* TERMINAL */
 function initTerminal(){
   const body=document.getElementById('t-body');
@@ -822,7 +825,6 @@ if(document.readyState==='loading'){
 }
 
 /* SCROLL REVEAL */
-// Show all reveals after 500ms as fallback
 setTimeout(()=>document.querySelectorAll('.reveal:not(.in)').forEach(el=>el.classList.add('in')),500);
 document.querySelectorAll('.reveal').forEach(el=>{
   new IntersectionObserver(entries=>entries.forEach(e=>{
@@ -839,4 +841,15 @@ function submitForm(e){
   const b=document.getElementById('fsub');
   b.textContent='✅ Received! We\'ll reply within 4 hours.';
   b.style.background='#059669';
-  setTimeout(()=>{b.textContent='⚡ Send Your Idea — Let\'s Build It Together';b.style.backgro
+  setTimeout(()=>{
+    b.textContent='⚡ Send Your Idea — Let\'s Build It Together';
+    b.style.background='var(--blue2)';
+  },4000);
+}
+
+/* MOBILE MENU */
+function toggleMenu(){document.getElementById('mob-menu').classList.toggle('open');}
+function closeMenu(){document.getElementById('mob-menu').classList.remove('open');}
+</script>
+</body>
+</html>
