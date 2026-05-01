@@ -8,36 +8,20 @@
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --white:   #FFFFFF;
-  --off:     #F7F8FC;
-  --light:   #EEF1F8;
-  --border:  #E2E6F0;
-  --navy:    #0B1437;
-  --navy2:   #1A2B5E;
-  --blue:    #1D4ED8;
-  --blue2:   #2563EB;
-  --blue-lt: #EFF4FF;
-  --blue-md: #DBEAFE;
-  --muted:   #64748B;
-  --muted2:  #94A3B8;
-  --gold:    #F59E0B;
-  --green:   #10B981;
-  --red:     #EF4444;
-  --fd: 'Outfit', sans-serif;
-  --fb: 'Plus Jakarta Sans', sans-serif;
-  --shadow-sm: 0 1px 3px rgba(11,20,55,0.06), 0 1px 2px rgba(11,20,55,0.04);
-  --shadow:    0 4px 16px rgba(11,20,55,0.08), 0 2px 6px rgba(11,20,55,0.04);
-  --shadow-lg: 0 16px 40px rgba(11,20,55,0.10), 0 4px 12px rgba(11,20,55,0.06);
+  --white:#FFFFFF;--off:#F7F8FC;--light:#EEF1F8;--border:#E2E6F0;
+  --navy:#0B1437;--navy2:#1A2B5E;--blue:#1D4ED8;--blue2:#2563EB;
+  --blue-lt:#EFF4FF;--blue-md:#DBEAFE;--muted:#64748B;--muted2:#94A3B8;
+  --gold:#F59E0B;--green:#10B981;--red:#EF4444;
+  --fd:'Outfit',sans-serif;--fb:'Plus Jakarta Sans',sans-serif;
+  --shadow-sm:0 1px 3px rgba(11,20,55,0.06),0 1px 2px rgba(11,20,55,0.04);
+  --shadow:0 4px 16px rgba(11,20,55,0.08),0 2px 6px rgba(11,20,55,0.04);
+  --shadow-lg:0 16px 40px rgba(11,20,55,0.10),0 4px 12px rgba(11,20,55,0.06);
 }
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
 body{background:var(--white);color:var(--navy);font-family:var(--fb);overflow-x:hidden;line-height:1.6;-webkit-font-smoothing:antialiased;}
 a{text-decoration:none;color:inherit;}
-
-/* ── WRAP ── */
 .wrap{max-width:1140px;margin:0 auto;padding:0 40px;}
-
-/* ── NAV ── */
 .nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(255,255,255,0.95);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 40px;max-width:1140px;margin:0 auto;}
 .nav-logo{display:flex;align-items:center;gap:10px;}
@@ -51,8 +35,6 @@ a{text-decoration:none;color:inherit;}
 .nav-cta:hover{background:var(--navy2);transform:translateY(-1px);box-shadow:var(--shadow);}
 .mob-btn{display:none;flex-direction:column;gap:4px;background:none;border:1px solid var(--border);border-radius:7px;padding:8px 10px;cursor:pointer;}
 .mob-btn span{display:block;width:18px;height:1.5px;background:var(--navy);}
-
-/* ── HERO ── */
 .hero{padding:120px 0 72px;background:var(--white);position:relative;overflow:hidden;}
 .hero::before{content:'';position:absolute;top:0;right:0;width:55%;height:100%;background:linear-gradient(135deg,var(--blue-lt) 0%,var(--off) 100%);clip-path:polygon(8% 0,100% 0,100% 100%,0 100%);z-index:0;}
 .hero-inner{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;position:relative;z-index:1;}
@@ -72,51 +54,34 @@ a{text-decoration:none;color:inherit;}
 .btn-outline{display:inline-flex;align-items:center;gap:8px;border:1.5px solid var(--border);color:var(--navy);font-family:var(--fd);font-weight:600;font-size:13px;padding:12px 24px;border-radius:8px;background:var(--white);transition:all .2s;}
 .btn-outline:hover{border-color:var(--blue2);color:var(--blue2);transform:translateY(-2px);box-shadow:var(--shadow-sm);}
 .hero-stats{display:flex;gap:32px;margin-top:48px;padding-top:32px;border-top:1px solid var(--border);}
-.hstat{text-align:left;}
 .hstat-n{font-family:var(--fd);font-weight:800;font-size:28px;color:var(--navy);line-height:1;}
 .hstat-l{font-size:12px;color:var(--muted2);font-weight:500;margin-top:3px;}
-
-/* HERO RIGHT — TERMINAL */
-.hero-right{position:relative;}
 .terminal{background:var(--navy);border-radius:14px;overflow:hidden;box-shadow:var(--shadow-lg);}
 .t-top{background:rgba(255,255,255,0.06);padding:12px 18px;display:flex;align-items:center;gap:8px;border-bottom:1px solid rgba(255,255,255,0.08);}
 .td{width:10px;height:10px;border-radius:50%;}
 .t-label{font-family:'Outfit',monospace;font-size:11px;color:rgba(255,255,255,0.3);margin-left:auto;letter-spacing:1px;}
 .t-body{padding:22px;font-family:'Outfit',monospace;font-size:12px;line-height:2;min-height:280px;}
 .tl{display:flex;gap:10px;}
-.tp{color:#60A5FA;flex-shrink:0;}
-.tc{color:#E2E8F0;}
-.tok{color:#34D399;}
-.tw{color:#FBBF24;}
-.to{color:#94A3B8;padding-left:18px;}
+.tp{color:#60A5FA;flex-shrink:0;}.tc{color:#E2E8F0;}.tok{color:#34D399;}.tw{color:#FBBF24;}.to{color:#94A3B8;padding-left:18px;}
 .tb{color:#60A5FA;animation:blink .9s infinite;}
 @keyframes blink{0%,100%{opacity:1;}50%{opacity:0;}}
-
-/* ── STRIPS ── */
 .marquee-wrap{background:var(--navy);padding:14px 0;overflow:hidden;position:relative;z-index:1;}
 .m-track{display:flex;animation:marquee 32s linear infinite;white-space:nowrap;}
 .m-item{display:inline-flex;align-items:center;gap:8px;padding:0 32px;font-family:var(--fd);font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.45);border-right:1px solid rgba(255,255,255,0.1);}
 .m-item b{color:#60A5FA;}
 @keyframes marquee{from{transform:translateX(0);}to{transform:translateX(-50%);}}
-
-/* ── TAGLINE BLOCK ── */
 .tagline-block{background:var(--blue2);padding:36px 0;text-align:center;}
 .tl-main{font-family:var(--fd);font-weight:900;font-size:clamp(28px,4vw,52px);color:#fff;letter-spacing:-1px;margin-bottom:8px;}
 .tl-sub{font-family:var(--fd);font-weight:500;font-size:clamp(14px,1.8vw,18px);color:rgba(255,255,255,0.65);letter-spacing:2px;text-transform:uppercase;margin-bottom:36px;}
 .tl-stats{display:flex;justify-content:center;gap:56px;flex-wrap:wrap;}
-.tls{text-align:center;}
 .tls-n{font-family:var(--fd);font-weight:900;font-size:36px;color:#fff;}
 .tls-l{font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.55);margin-top:4px;}
-
-/* ── SECTION COMMONS ── */
 section{padding:48px 0;}
 .s-chip{display:inline-flex;align-items:center;gap:8px;font-family:var(--fd);font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--blue2);margin-bottom:12px;}
 .s-chip::before{content:'';width:20px;height:2px;background:var(--blue2);border-radius:2px;}
 .s-h2{font-family:var(--fd);font-weight:800;font-size:clamp(26px,3.5vw,40px);color:var(--navy);line-height:1.12;letter-spacing:-0.8px;margin-bottom:10px;}
 .s-h2 em{font-style:normal;color:var(--blue2);}
 .s-p{font-size:14px;color:var(--muted);max-width:520px;line-height:1.7;margin-bottom:0;}
-
-/* ── WHY CLAUDE ── */
 .claude-sect{background:var(--off);}
 .claude-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;}
 .claude-feats{display:flex;flex-direction:column;gap:10px;margin-top:20px;}
@@ -125,7 +90,6 @@ section{padding:48px 0;}
 .cf-ico{width:40px;height:40px;border-radius:10px;background:var(--blue-md);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;}
 .cf-title{font-family:var(--fd);font-weight:700;font-size:14px;color:var(--navy);margin-bottom:4px;}
 .cf-desc{font-size:13px;color:var(--muted);line-height:1.65;}
-/* CLAUDE VISUAL */
 .claude-vis{display:flex;flex-direction:column;gap:12px;}
 .cv-card{background:var(--white);border:1px solid var(--border);border-radius:14px;padding:24px;box-shadow:var(--shadow-sm);}
 .cv-card.accent{background:var(--navy);border-color:var(--navy);}
@@ -138,8 +102,6 @@ section{padding:48px 0;}
 .cv-bar-track{flex:1;height:6px;background:var(--light);border-radius:100px;overflow:hidden;}
 .cv-bar-fill{height:100%;border-radius:100px;background:var(--blue2);}
 .cv-bar-val{font-family:var(--fd);font-size:11px;font-weight:600;color:var(--blue2);width:32px;text-align:right;}
-
-/* ── SERVICES ── */
 .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px;}
 .svc-card{background:var(--white);border:1px solid var(--border);border-radius:14px;padding:28px 24px;transition:all .28s;position:relative;overflow:hidden;box-shadow:var(--shadow-sm);}
 .svc-card::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--blue2);transform:scaleX(0);transform-origin:left;transition:transform .3s;}
@@ -154,15 +116,11 @@ section{padding:48px 0;}
 .svc-desc{font-size:13px;color:var(--muted);line-height:1.75;margin-bottom:16px;}
 .svc-tags{display:flex;flex-wrap:wrap;gap:6px;}
 .stag{font-family:var(--fd);font-size:10px;font-weight:600;padding:3px 10px;border-radius:100px;background:var(--blue-lt);color:var(--blue2);letter-spacing:0.5px;}
-/* Wide card extras */
 .wide-usp{display:flex;flex-direction:column;gap:12px;}
 .usp-item{display:flex;gap:12px;align-items:flex-start;background:var(--off);border-radius:10px;padding:14px 16px;}
 .usp-ico{font-size:20px;flex-shrink:0;}
 .usp-title{font-family:var(--fd);font-weight:700;font-size:13px;color:var(--navy);margin-bottom:3px;}
 .usp-desc{font-size:12px;color:var(--muted);line-height:1.6;}
-.usp-price{background:var(--navy);color:#fff;font-family:var(--fd);font-weight:700;font-size:13px;padding:4px 12px;border-radius:6px;display:inline-block;margin-top:8px;}
-
-/* ── ANDROID SECTION ── */
 .android-sect{background:var(--off);}
 .android-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start;margin-top:24px;}
 .android-feats{display:flex;flex-direction:column;gap:14px;}
@@ -171,13 +129,11 @@ section{padding:48px 0;}
 .af-num{width:28px;height:28px;border-radius:8px;background:var(--blue2);color:#fff;font-family:var(--fd);font-weight:700;font-size:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
 .af-title{font-family:var(--fd);font-weight:700;font-size:13px;color:var(--navy);margin-bottom:3px;}
 .af-desc{font-size:12px;color:var(--muted);line-height:1.65;}
-/* Tech pills */
 .tech-wrap{background:var(--white);border:1px solid var(--border);border-radius:14px;padding:24px;box-shadow:var(--shadow-sm);}
 .tech-label{font-family:var(--fd);font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--muted2);margin-bottom:16px;}
 .tech-pills{display:flex;flex-wrap:wrap;gap:8px;}
 .tpill{display:flex;align-items:center;gap:6px;font-family:var(--fd);font-size:11px;font-weight:600;padding:6px 14px;border-radius:100px;background:var(--off);border:1px solid var(--border);color:var(--navy);transition:all .2s;}
 .tpill:hover{background:var(--blue-md);border-color:#BFDBFE;color:var(--blue2);}
-/* App ideas */
 .ideas-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:32px;}
 .idea-card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:18px;transition:all .25s;box-shadow:var(--shadow-sm);}
 .idea-card:hover{border-color:#BFDBFE;box-shadow:var(--shadow);transform:translateY(-2px);}
@@ -185,11 +141,7 @@ section{padding:48px 0;}
 .idea-title{font-family:var(--fd);font-weight:700;font-size:13px;color:var(--navy);margin-bottom:4px;}
 .idea-desc{font-size:11px;color:var(--muted);line-height:1.6;}
 .idea-badge{display:inline-block;font-family:var(--fd);font-size:10px;font-weight:600;padding:2px 8px;border-radius:100px;margin-top:6px;}
-.ib-live{background:#DCFCE7;color:#15803D;}
-.ib-built{background:#DBEAFE;color:#1D4ED8;}
-.ib-avail{background:#FEF9C3;color:#A16207;}
-
-/* ── PROCESS ── */
+.ib-live{background:#DCFCE7;color:#15803D;}.ib-built{background:#DBEAFE;color:#1D4ED8;}.ib-avail{background:#FEF9C3;color:#A16207;}
 .process-sect{text-align:center;}
 .proc-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:32px;position:relative;}
 .proc-line{position:absolute;top:28px;left:10%;right:10%;height:1px;background:var(--border);z-index:0;}
@@ -199,7 +151,7 @@ section{padding:48px 0;}
 .ps-title{font-family:var(--fd);font-weight:700;font-size:13px;color:var(--navy);}
 .ps-desc{font-size:11px;color:var(--muted);line-height:1.6;}
 
-/* ── PRICING ── */
+/* ── PRICING — UPDATED ── */
 .price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px;}
 .pc{background:var(--white);border:1px solid var(--border);border-radius:16px;padding:32px 28px;transition:all .28s;position:relative;box-shadow:var(--shadow-sm);}
 .pc:hover{border-color:#BFDBFE;box-shadow:var(--shadow);}
@@ -207,10 +159,8 @@ section{padding:48px 0;}
 .pc-badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--blue2);color:#fff;font-family:var(--fd);font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:4px 16px;border-radius:100px;white-space:nowrap;}
 .pc-plan{font-family:var(--fd);font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--muted2);margin-bottom:10px;}
 .pc.hot .pc-plan{color:rgba(255,255,255,0.5);}
-.pc-amt{font-family:var(--fd);font-weight:900;font-size:38px;color:var(--navy);margin-bottom:4px;}
-.pc.hot .pc-amt{color:#fff;}
-.pc-amt span{font-size:14px;font-weight:400;color:var(--muted2);}
-.pc.hot .pc-amt span{color:rgba(255,255,255,0.4);}
+.pc-tagline{font-family:var(--fd);font-weight:800;font-size:20px;color:var(--navy);line-height:1.25;margin-bottom:10px;}
+.pc.hot .pc-tagline{color:#fff;}
 .pc-desc{font-size:13px;color:var(--muted);margin-bottom:20px;line-height:1.6;}
 .pc.hot .pc-desc{color:rgba(255,255,255,0.55);}
 .pc-div{height:1px;background:var(--border);margin-bottom:20px;}
@@ -218,17 +168,15 @@ section{padding:48px 0;}
 .pc-list{list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:28px;}
 .pc-list li{display:flex;gap:10px;font-size:13px;color:var(--muted);align-items:flex-start;}
 .pc.hot .pc-list li{color:rgba(255,255,255,0.7);}
-.pc-list li::before{content:'';width:16px;height:16px;border-radius:50%;background:#DCFCE7;display:flex;align-items:center;justify-content:center;flex-shrink:0;background-image:url("data:image/svg+xml,%3Csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 4L3.5 6.5L9 1' stroke='%2315803D' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:center;margin-top:2px;}
+.pc-list li::before{content:'';width:16px;height:16px;border-radius:50%;background:#DCFCE7;flex-shrink:0;background-image:url("data:image/svg+xml,%3Csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 4L3.5 6.5L9 1' stroke='%2315803D' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:center;margin-top:2px;}
 .pc.hot .pc-list li::before{background-color:rgba(255,255,255,0.15);background-image:url("data:image/svg+xml,%3Csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 4L3.5 6.5L9 1' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");}
-.pc-btn{display:block;text-align:center;padding:12px;border-radius:8px;font-family:var(--fd);font-weight:700;font-size:13px;letter-spacing:0.3px;transition:all .25s;}
-.pc-btn.solid{background:var(--blue2);color:#fff;box-shadow:0 4px 14px rgba(37,99,235,.3);}
-.pc-btn.solid:hover{background:#1D4ED8;transform:translateY(-1px);}
+.pc-btn{display:block;text-align:center;padding:13px;border-radius:8px;font-family:var(--fd);font-weight:700;font-size:13px;letter-spacing:0.3px;transition:all .25s;}
 .pc-btn.outl{border:1.5px solid var(--border);color:var(--navy);}
 .pc-btn.outl:hover{border-color:var(--blue2);color:var(--blue2);}
-.pc-btn.wh{border:1.5px solid rgba(255,255,255,0.2);color:#fff;}
-.pc-btn.wh:hover{background:rgba(255,255,255,0.1);}
+.pc-btn.wh{background:var(--blue2);color:#fff;box-shadow:0 4px 14px rgba(37,99,235,.4);}
+.pc-btn.wh:hover{background:#1D4ED8;transform:translateY(-1px);}
+.pc-note{text-align:center;margin-top:28px;font-family:var(--fd);font-size:13px;color:var(--muted2);}
 
-/* ── CONTACT ── */
 .contact-sect{background:var(--off);}
 .contact-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:56px;align-items:start;margin-top:40px;}
 .contact-info{display:flex;flex-direction:column;gap:20px;}
@@ -241,7 +189,6 @@ section{padding:48px 0;}
 .contact-channels{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
 .ch-btn{display:flex;align-items:center;gap:8px;padding:12px 16px;background:var(--white);border:1px solid var(--border);border-radius:10px;font-family:var(--fd);font-size:12px;font-weight:600;color:var(--navy);transition:all .2s;box-shadow:var(--shadow-sm);}
 .ch-btn:hover{border-color:#BFDBFE;color:var(--blue2);transform:translateY(-1px);}
-/* FORM */
 .cf-form{background:var(--white);border:1px solid var(--border);border-radius:16px;padding:36px;box-shadow:var(--shadow);}
 .f-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
 .fg{display:flex;flex-direction:column;gap:6px;margin-bottom:14px;}
@@ -254,75 +201,41 @@ section{padding:48px 0;}
 .fta{height:100px;resize:none;}
 .f-submit{width:100%;padding:14px;border:none;border-radius:8px;background:var(--blue2);color:#fff;font-family:var(--fd);font-weight:700;font-size:14px;letter-spacing:0.5px;cursor:pointer;transition:all .25s;box-shadow:0 4px 14px rgba(37,99,235,.3);}
 .f-submit:hover{background:#1D4ED8;transform:translateY(-1px);box-shadow:0 8px 24px rgba(37,99,235,.35);}
-
-/* ── FOOTER ── */
 footer{background:var(--navy);padding:40px 0;}
 .foot{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;}
 .f-brand{font-family:var(--fd);font-weight:900;font-size:16px;color:#fff;letter-spacing:0.5px;}
 .f-brand span{color:#60A5FA;}
 .f-copy{font-family:var(--fd);font-size:11px;color:rgba(255,255,255,0.3);letter-spacing:1px;}
 .f-tag{font-family:var(--fd);font-size:11px;color:rgba(255,255,255,0.25);letter-spacing:1px;font-style:italic;}
-
-/* ── MOBILE MENU ── */
 .mob-menu{display:none;position:fixed;top:61px;left:0;right:0;z-index:199;background:#fff;border-bottom:1px solid var(--border);flex-direction:column;box-shadow:var(--shadow-lg);}
 .mob-menu.open{display:flex;}
 .mob-menu a{font-family:var(--fd);font-size:13px;font-weight:600;color:var(--navy);padding:14px 24px;border-bottom:1px solid var(--border);transition:background .2s;}
 .mob-menu a:last-child{color:var(--blue2);border-bottom:none;}
 .mob-menu a:hover{background:var(--off);}
-
-/* ── REVEAL ── */
 .reveal{opacity:1;transform:translateY(0);transition:opacity .5s ease,transform .5s ease;}
 .reveal.in{opacity:1;transform:translateY(0);}
 .d1{transition-delay:.1s;}.d2{transition-delay:.2s;}.d3{transition-delay:.3s;}
-
-/* ── RESPONSIVE ── */
 @media(max-width:960px){
-  .wrap{padding:0 24px;}
-  .nav-inner{padding:14px 24px;}
-  .nav-links{display:none;}
-  .mob-btn{display:flex;}
-  .nav-cta{display:none;}
-  .hero{padding:100px 0 56px;}
-  .hero-inner{grid-template-columns:1fr;gap:40px;}
-  .hero::before{display:none;}
-  .claude-grid{grid-template-columns:1fr;}
-  .svc-grid{grid-template-columns:1fr 1fr;}
-  .svc-card.wide{grid-column:span 2;grid-template-columns:1fr;}
-  .android-grid{grid-template-columns:1fr;}
-  .ideas-grid{grid-template-columns:1fr 1fr;}
-  .proc-grid{grid-template-columns:1fr 1fr;gap:24px;}
-  .proc-line{display:none;}
-  .price-grid{grid-template-columns:1fr;max-width:400px;margin-left:auto;margin-right:auto;}
-  .contact-grid{grid-template-columns:1fr;}
-  .contact-channels{grid-template-columns:repeat(4,1fr);}
-  .f-row{grid-template-columns:1fr;}
-  .hero-stats{gap:24px;}
-  .tl-stats{gap:32px;}
+  .wrap{padding:0 24px;}.nav-inner{padding:14px 24px;}.nav-links{display:none;}.mob-btn{display:flex;}.nav-cta{display:none;}
+  .hero{padding:100px 0 56px;}.hero-inner{grid-template-columns:1fr;gap:40px;}.hero::before{display:none;}
+  .claude-grid{grid-template-columns:1fr;}.svc-grid{grid-template-columns:1fr 1fr;}.svc-card.wide{grid-column:span 2;grid-template-columns:1fr;}
+  .android-grid{grid-template-columns:1fr;}.ideas-grid{grid-template-columns:1fr 1fr;}.proc-grid{grid-template-columns:1fr 1fr;gap:24px;}
+  .proc-line{display:none;}.price-grid{grid-template-columns:1fr;max-width:400px;margin-left:auto;margin-right:auto;}
+  .contact-grid{grid-template-columns:1fr;}.contact-channels{grid-template-columns:repeat(4,1fr);}.f-row{grid-template-columns:1fr;}
+  .hero-stats{gap:24px;}.tl-stats{gap:32px;}
 }
 @media(max-width:600px){
-  .wrap{padding:0 16px;}
-  .nav-inner{padding:12px 16px;}
-  section{padding:36px 0;}
-  .pulse-card{grid-template-columns:1fr!important;}
-  .pulse-cta{text-align:left!important;margin-top:16px;}
-  .hero{padding:90px 0 48px;}
-  .hero-h1{font-size:34px;}
-  .hero-btns{flex-direction:column;}
-  .btn-primary,.btn-outline{width:100%;justify-content:center;}
-  .svc-grid{grid-template-columns:1fr;}
-  .svc-card.wide{grid-column:span 1;}
-  .ideas-grid{grid-template-columns:1fr;}
-  .proc-grid{grid-template-columns:1fr 1fr;}
-  .contact-channels{grid-template-columns:1fr 1fr;}
-  .foot{flex-direction:column;text-align:center;}
-  .tl-stats{gap:24px;}
-  .tls-n{font-size:28px;}
+  .wrap{padding:0 16px;}.nav-inner{padding:12px 16px;}section{padding:36px 0;}
+  .pulse-card{grid-template-columns:1fr!important;}.pulse-cta{text-align:left!important;margin-top:16px;}
+  .hero{padding:90px 0 48px;}.hero-h1{font-size:34px;}.hero-btns{flex-direction:column;}
+  .btn-primary,.btn-outline{width:100%;justify-content:center;}.svc-grid{grid-template-columns:1fr;}.svc-card.wide{grid-column:span 1;}
+  .ideas-grid{grid-template-columns:1fr;}.proc-grid{grid-template-columns:1fr 1fr;}.contact-channels{grid-template-columns:1fr 1fr;}
+  .foot{flex-direction:column;text-align:center;}.tl-stats{gap:24px;}.tls-n{font-size:28px;}
 }
 </style>
 </head>
 <body>
 
-<!-- NAV -->
 <nav class="nav">
   <div class="nav-inner">
     <a href="#" class="nav-logo">
@@ -334,37 +247,30 @@ footer{background:var(--navy);padding:40px 0;}
         <circle cx="19" cy="50" r="4" fill="#1D4ED8"/><circle cx="81" cy="50" r="4" fill="#1D4ED8"/>
         <circle cx="28" cy="28" r="3" fill="#F59E0B"/><circle cx="72" cy="72" r="3" fill="#F59E0B"/>
         <circle cx="72" cy="28" r="3" fill="#F59E0B"/><circle cx="28" cy="72" r="3" fill="#F59E0B"/>
-        <circle cx="50" cy="50" r="10" fill="#0B1437"/>
-        <circle cx="50" cy="50" r="3" fill="white"/>
+        <circle cx="50" cy="50" r="10" fill="#0B1437"/><circle cx="50" cy="50" r="3" fill="white"/>
         <path d="M36 50 Q40 44 44 50 Q47 54 50 50 Q53 46 56 50 Q60 56 64 50" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
       </svg>
       <span class="nav-name">AXONIVA <span>AI TECH</span></span>
     </a>
     <ul class="nav-links">
-      <li><a href="#claude">Claude AI</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#android">Android AI</a></li>
-      <li><a href="#process">Process</a></li>
+      <li><a href="#claude">Claude AI</a></li><li><a href="#services">Services</a></li>
+      <li><a href="#android">Android AI</a></li><li><a href="#process">Process</a></li>
       <li><a href="#pricing">Pricing</a></li>
     </ul>
     <a href="#contact" class="nav-cta">Get In Touch →</a>
-    <button class="mob-btn" onclick="toggleMenu()">
-      <span></span><span></span><span></span>
-    </button>
+    <button class="mob-btn" onclick="toggleMenu()"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
-<!-- MOBILE MENU -->
 <div class="mob-menu" id="mob-menu">
-  <a href="#claude"   onclick="closeMenu()">Claude AI</a>
+  <a href="#claude" onclick="closeMenu()">Claude AI</a>
   <a href="#services" onclick="closeMenu()">Services</a>
-  <a href="#android"  onclick="closeMenu()">Android AI</a>
-  <a href="#process"  onclick="closeMenu()">Process</a>
-  <a href="#pricing"  onclick="closeMenu()">Pricing</a>
-  <a href="#contact"  onclick="closeMenu()">Get In Touch →</a>
+  <a href="#android" onclick="closeMenu()">Android AI</a>
+  <a href="#process" onclick="closeMenu()">Process</a>
+  <a href="#pricing" onclick="closeMenu()">Pricing</a>
+  <a href="#contact" onclick="closeMenu()">Get In Touch →</a>
 </div>
 
-<!-- HERO -->
 <section class="hero">
   <div class="wrap">
     <div class="hero-inner">
@@ -382,18 +288,15 @@ footer{background:var(--navy);padding:40px 0;}
           <a href="#services" class="btn-outline">Explore Services →</a>
         </div>
         <div class="hero-stats">
-          <div class="hstat"><div class="hstat-n">7+</div><div class="hstat-l">AI Solutions</div></div>
-          <div class="hstat"><div class="hstat-n">48hr</div><div class="hstat-l">Max Delivery</div></div>
-          <div class="hstat"><div class="hstat-n">100%</div><div class="hstat-l">Claude AI Powered</div></div>
-          <div class="hstat"><div class="hstat-n">∞</div><div class="hstat-l">Possibilities</div></div>
+          <div><div class="hstat-n">7+</div><div class="hstat-l">AI Solutions</div></div>
+          <div><div class="hstat-n">48hr</div><div class="hstat-l">Max Delivery</div></div>
+          <div><div class="hstat-n">100%</div><div class="hstat-l">Claude AI Powered</div></div>
+          <div><div class="hstat-n">∞</div><div class="hstat-l">Possibilities</div></div>
         </div>
       </div>
-      <!-- TERMINAL -->
       <div class="terminal">
         <div class="t-top">
-          <div class="td" style="background:#FF5F57;"></div>
-          <div class="td" style="background:#FFBD2E;"></div>
-          <div class="td" style="background:#28C840;"></div>
+          <div class="td" style="background:#FF5F57;"></div><div class="td" style="background:#FFBD2E;"></div><div class="td" style="background:#28C840;"></div>
           <span class="t-label">axoniva-agent · claude-sonnet-4</span>
         </div>
         <div class="t-body" id="t-body"></div>
@@ -402,45 +305,30 @@ footer{background:var(--navy);padding:40px 0;}
   </div>
 </section>
 
-<!-- MARQUEE -->
 <div class="marquee-wrap">
   <div class="m-track">
-    <span class="m-item">🤖 <b>AI Agents</b></span>
-    <span class="m-item">📱 <b>Android Apps</b></span>
-    <span class="m-item">🧠 <b>Claude AI</b></span>
-    <span class="m-item">🎨 <b>Web Design — 48hrs</b></span>
-    <span class="m-item">🔗 <b>Automation</b></span>
-    <span class="m-item">🚀 <b>Play Store Launch</b></span>
-    <span class="m-item">🇮🇳 <b>Made in India</b></span>
-    <span class="m-item">💬 <b>AI Chatbots</b></span>
-    <span class="m-item">📦 <b>Full Source Code</b></span>
-    <span class="m-item">🤖 <b>AI Agents</b></span>
-    <span class="m-item">📱 <b>Android Apps</b></span>
-    <span class="m-item">🧠 <b>Claude AI</b></span>
-    <span class="m-item">🎨 <b>Web Design — 48hrs</b></span>
-    <span class="m-item">🔗 <b>Automation</b></span>
-    <span class="m-item">🚀 <b>Play Store Launch</b></span>
-    <span class="m-item">🇮🇳 <b>Made in India</b></span>
-    <span class="m-item">💬 <b>AI Chatbots</b></span>
-    <span class="m-item">📦 <b>Full Source Code</b></span>
+    <span class="m-item">🤖 <b>AI Agents</b></span><span class="m-item">📱 <b>Android Apps</b></span><span class="m-item">🧠 <b>Claude AI</b></span>
+    <span class="m-item">🎨 <b>Web Design — 48hrs</b></span><span class="m-item">🔗 <b>Automation</b></span><span class="m-item">🚀 <b>Play Store Launch</b></span>
+    <span class="m-item">🇮🇳 <b>Made in India</b></span><span class="m-item">💬 <b>AI Chatbots</b></span><span class="m-item">📦 <b>Full Source Code</b></span>
+    <span class="m-item">🤖 <b>AI Agents</b></span><span class="m-item">📱 <b>Android Apps</b></span><span class="m-item">🧠 <b>Claude AI</b></span>
+    <span class="m-item">🎨 <b>Web Design — 48hrs</b></span><span class="m-item">🔗 <b>Automation</b></span><span class="m-item">🚀 <b>Play Store Launch</b></span>
+    <span class="m-item">🇮🇳 <b>Made in India</b></span><span class="m-item">💬 <b>AI Chatbots</b></span><span class="m-item">📦 <b>Full Source Code</b></span>
   </div>
 </div>
 
-<!-- TAGLINE BLOCK -->
 <div class="tagline-block">
   <div class="wrap">
     <div class="tl-main">One Studio. Infinite Intelligence.</div>
     <div class="tl-sub">Where Ideas Meet Intelligence.</div>
     <div class="tl-stats">
-      <div class="tls"><div class="tls-n">7+</div><div class="tls-l">AI Capabilities</div></div>
-      <div class="tls"><div class="tls-n">48hr</div><div class="tls-l">Max Delivery</div></div>
-      <div class="tls"><div class="tls-n">100%</div><div class="tls-l">Claude AI Powered</div></div>
-      <div class="tls"><div class="tls-n">∞</div><div class="tls-l">Possibilities</div></div>
+      <div><div class="tls-n">7+</div><div class="tls-l">AI Capabilities</div></div>
+      <div><div class="tls-n">48hr</div><div class="tls-l">Max Delivery</div></div>
+      <div><div class="tls-n">100%</div><div class="tls-l">Claude AI Powered</div></div>
+      <div><div class="tls-n">∞</div><div class="tls-l">Possibilities</div></div>
     </div>
   </div>
 </div>
 
-<!-- WHY CLAUDE -->
 <section class="claude-sect" id="claude">
   <div class="wrap">
     <div class="claude-grid">
@@ -449,21 +337,11 @@ footer{background:var(--navy);padding:40px 0;}
         <h2 class="s-h2">The World's Most<br><em>Capable AI Brain</em></h2>
         <p class="s-p">"Where Ideas Meet Intelligence." — Every solution we build runs on Anthropic Claude, the safest and most capable AI model available today.</p>
         <div class="claude-feats">
-          <div class="cf reveal">
-            <div class="cf-ico">🧩</div>
-            <div><div class="cf-title">Deep Reasoning & Autonomous Planning</div><p class="cf-desc">Claude breaks complex goals into executable steps — making it ideal for agents requiring real judgment and multi-step execution.</p></div>
-          </div>
-          <div class="cf reveal d1">
-            <div class="cf-ico">🔐</div>
-            <div><div class="cf-title">Safe, Responsible & Reliable</div><p class="cf-desc">Anthropic leads global AI safety research. Your agents behave predictably, ethically and within defined boundaries — every time.</p></div>
-          </div>
-          <div class="cf reveal d2">
-            <div class="cf-ico">📄</div>
-            <div><div class="cf-title">200K Token Context Window</div><p class="cf-desc">Claude reads entire codebases, large documents and datasets — enabling agents that work with your actual business data.</p></div>
-          </div>
+          <div class="cf reveal"><div class="cf-ico">🧩</div><div><div class="cf-title">Deep Reasoning & Autonomous Planning</div><p class="cf-desc">Claude breaks complex goals into executable steps — making it ideal for agents requiring real judgment and multi-step execution.</p></div></div>
+          <div class="cf reveal d1"><div class="cf-ico">🔐</div><div><div class="cf-title">Safe, Responsible & Reliable</div><p class="cf-desc">Anthropic leads global AI safety research. Your agents behave predictably, ethically and within defined boundaries — every time.</p></div></div>
+          <div class="cf reveal d2"><div class="cf-ico">📄</div><div><div class="cf-title">200K Token Context Window</div><p class="cf-desc">Claude reads entire codebases, large documents and datasets — enabling agents that work with your actual business data.</p></div></div>
         </div>
       </div>
-      <!-- VISUAL CARDS -->
       <div class="claude-vis reveal">
         <div class="cv-card accent">
           <div class="cv-top"><span class="cv-icon">🤖</span><span class="cv-name">Claude Sonnet 4 — Active</span></div>
@@ -486,56 +364,18 @@ footer{background:var(--navy);padding:40px 0;}
   </div>
 </section>
 
-<!-- SERVICES -->
 <section id="services">
   <div class="wrap">
     <div class="s-chip">Studio Capabilities</div>
     <h2 class="s-h2">One Studio. <em>Every AI Need.</em></h2>
     <p class="s-p">From autonomous agents to Android apps, workflow automation to websites — complete AI solutions delivered fast.</p>
     <div class="svc-grid">
-      <div class="svc-card reveal">
-        <div class="svc-num">01 ——</div>
-        <span class="svc-icon">🤖</span>
-        <h3 class="svc-title">Autonomous AI Agents</h3>
-        <p class="svc-desc">Custom Claude-powered agents that think, plan and act autonomously — handling research, reporting and complex workflows 24/7.</p>
-        <div class="svc-tags"><span class="stag">Claude API</span><span class="stag">LangChain</span><span class="stag">CrewAI</span><span class="stag">AutoGen</span></div>
-      </div>
-      <div class="svc-card reveal d1">
-        <div class="svc-num">02 ——</div>
-        <span class="svc-icon">💬</span>
-        <h3 class="svc-title">Intelligent Chatbots</h3>
-        <p class="svc-desc">Context-aware AI assistants trained on your data — for support, knowledge bases, sales automation and WhatsApp/Telegram.</p>
-        <div class="svc-tags"><span class="stag">RAG</span><span class="stag">Claude</span><span class="stag">WhatsApp</span><span class="stag">Telegram</span></div>
-      </div>
-      <div class="svc-card reveal d2">
-        <div class="svc-num">03 ——</div>
-        <span class="svc-icon">📱</span>
-        <h3 class="svc-title">AI Android & iOS Apps</h3>
-        <p class="svc-desc">Full AI-powered apps built with Kotlin + Jetpack Compose — from idea, code, Play Store submission to live launch. Full source code delivered.</p>
-        <div class="svc-tags"><span class="stag">Kotlin</span><span class="stag">Flutter</span><span class="stag">Gemini</span><span class="stag">Firebase</span></div>
-      </div>
-      <div class="svc-card reveal">
-        <div class="svc-num">04 ——</div>
-        <span class="svc-icon">🔗</span>
-        <h3 class="svc-title">Workflow Automation</h3>
-        <p class="svc-desc">AI pipelines that connect tools, eliminate manual work and route tasks — reading emails, updating CRMs, generating reports automatically.</p>
-        <div class="svc-tags"><span class="stag">n8n</span><span class="stag">Make</span><span class="stag">Xano</span><span class="stag">Zapier AI</span></div>
-      </div>
-      <div class="svc-card reveal d1">
-        <div class="svc-num">05 ——</div>
-        <span class="svc-icon">🏢</span>
-        <h3 class="svc-title">Enterprise AI Platforms</h3>
-        <p class="svc-desc">Domain-specific AI for banking, healthcare, compliance and transport — FinCrime agents, regulatory monitors, health trackers built for scale.</p>
-        <div class="svc-tags"><span class="stag">FinCrime AI</span><span class="stag">RegTech</span><span class="stag">Health AI</span><span class="stag">Rail AI</span></div>
-      </div>
-      <div class="svc-card reveal d2">
-        <div class="svc-num">06 ——</div>
-        <span class="svc-icon">🌐</span>
-        <h3 class="svc-title">AI Web Applications</h3>
-        <p class="svc-desc">Full-stack web apps with AI at the core — dashboards, SaaS tools, monitoring portals. Beautiful, fast and production-ready on day one.</p>
-        <div class="svc-tags"><span class="stag">React</span><span class="stag">Supabase</span><span class="stag">Vercel</span><span class="stag">FlutterFlow</span></div>
-      </div>
-      <!-- WIDE CARD — WEBPAGE DESIGN -->
+      <div class="svc-card reveal"><div class="svc-num">01 ——</div><span class="svc-icon">🤖</span><h3 class="svc-title">Autonomous AI Agents</h3><p class="svc-desc">Custom Claude-powered agents that think, plan and act autonomously — handling research, reporting and complex workflows 24/7.</p><div class="svc-tags"><span class="stag">Claude API</span><span class="stag">LangChain</span><span class="stag">CrewAI</span><span class="stag">AutoGen</span></div></div>
+      <div class="svc-card reveal d1"><div class="svc-num">02 ——</div><span class="svc-icon">💬</span><h3 class="svc-title">Intelligent Chatbots</h3><p class="svc-desc">Context-aware AI assistants trained on your data — for support, knowledge bases, sales automation and WhatsApp/Telegram.</p><div class="svc-tags"><span class="stag">RAG</span><span class="stag">Claude</span><span class="stag">WhatsApp</span><span class="stag">Telegram</span></div></div>
+      <div class="svc-card reveal d2"><div class="svc-num">03 ——</div><span class="svc-icon">📱</span><h3 class="svc-title">AI Android & iOS Apps</h3><p class="svc-desc">Full AI-powered apps built with Kotlin + Jetpack Compose — from idea, code, Play Store submission to live launch. Full source code delivered.</p><div class="svc-tags"><span class="stag">Kotlin</span><span class="stag">Flutter</span><span class="stag">Gemini</span><span class="stag">Firebase</span></div></div>
+      <div class="svc-card reveal"><div class="svc-num">04 ——</div><span class="svc-icon">🔗</span><h3 class="svc-title">Workflow Automation</h3><p class="svc-desc">AI pipelines that connect tools, eliminate manual work and route tasks — reading emails, updating CRMs, generating reports automatically.</p><div class="svc-tags"><span class="stag">n8n</span><span class="stag">Make</span><span class="stag">Xano</span><span class="stag">Zapier AI</span></div></div>
+      <div class="svc-card reveal d1"><div class="svc-num">05 ——</div><span class="svc-icon">🏢</span><h3 class="svc-title">Enterprise AI Platforms</h3><p class="svc-desc">Domain-specific AI for banking, healthcare, compliance and transport — FinCrime agents, regulatory monitors, health trackers built for scale.</p><div class="svc-tags"><span class="stag">FinCrime AI</span><span class="stag">RegTech</span><span class="stag">Health AI</span><span class="stag">Rail AI</span></div></div>
+      <div class="svc-card reveal d2"><div class="svc-num">06 ——</div><span class="svc-icon">🌐</span><h3 class="svc-title">AI Web Applications</h3><p class="svc-desc">Full-stack web apps with AI at the core — dashboards, SaaS tools, monitoring portals. Beautiful, fast and production-ready on day one.</p><div class="svc-tags"><span class="stag">React</span><span class="stag">Supabase</span><span class="stag">Vercel</span><span class="stag">FlutterFlow</span></div></div>
       <div class="svc-card wide reveal">
         <div>
           <div class="svc-num">07 —— ⚡ FASTEST DELIVERY</div>
@@ -548,14 +388,13 @@ footer{background:var(--navy);padding:40px 0;}
         <div class="wide-usp">
           <div class="usp-item"><span class="usp-ico">⚡</span><div><div class="usp-title">24–48 Hour Delivery</div><p class="usp-desc">From brief to live website in under 2 days. No lengthy rounds or delays.</p></div></div>
           <div class="usp-item"><span class="usp-ico">🎯</span><div><div class="usp-title">100% Custom — Zero Templates</div><p class="usp-desc">Every site uniquely designed for your brand — animations, colors, layout built from scratch.</p></div></div>
-          <div class="usp-item"><span class="usp-ico">💰</span><div><div class="usp-title">Fraction of Agency Cost</div><p class="usp-desc">Agency-quality websites at startup-friendly pricing.</p><span class="usp-price">Starting ₹5,000</span></div></div>
+          <div class="usp-item"><span class="usp-ico">💡</span><div><div class="usp-title">Startup-Friendly Investment</div><p class="usp-desc">Agency-quality websites at a fraction of the cost. Contact us for a personalised quote.</p></div></div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ANDROID AI -->
 <section class="android-sect" id="android">
   <div class="wrap">
     <div class="s-chip">Android AI Development</div>
@@ -574,18 +413,10 @@ footer{background:var(--navy);padding:40px 0;}
         <div class="tech-wrap reveal">
           <div class="tech-label">Android AI Tech Stack</div>
           <div class="tech-pills">
-            <div class="tpill">🤖 Kotlin + Jetpack Compose</div>
-            <div class="tpill">🧠 Claude API</div>
-            <div class="tpill">✨ Gemini Flash</div>
-            <div class="tpill">🔥 Firebase</div>
-            <div class="tpill">🌐 Retrofit + REST</div>
-            <div class="tpill">🗄️ Room Database</div>
-            <div class="tpill">🏗️ MVVM Architecture</div>
-            <div class="tpill">📱 Material 3</div>
-            <div class="tpill">🔔 FCM Notifications</div>
-            <div class="tpill">💳 RazorPay</div>
-            <div class="tpill">📊 AdMob</div>
-            <div class="tpill">🗺️ Google Maps SDK</div>
+            <div class="tpill">🤖 Kotlin + Jetpack Compose</div><div class="tpill">🧠 Claude API</div><div class="tpill">✨ Gemini Flash</div>
+            <div class="tpill">🔥 Firebase</div><div class="tpill">🌐 Retrofit + REST</div><div class="tpill">🗄️ Room Database</div>
+            <div class="tpill">🏗️ MVVM Architecture</div><div class="tpill">📱 Material 3</div><div class="tpill">🔔 FCM Notifications</div>
+            <div class="tpill">💳 RazorPay</div><div class="tpill">📊 AdMob</div><div class="tpill">🗺️ Google Maps SDK</div>
           </div>
         </div>
         <div class="ideas-grid" style="margin-top:20px;">
@@ -601,7 +432,6 @@ footer{background:var(--navy);padding:40px 0;}
   </div>
 </section>
 
-<!-- AXONIVA PULSE FEATURED PRODUCT -->
 <section style="background:var(--off);padding:48px 0;">
   <div class="wrap">
     <div class="s-chip">🚀 Our Latest Live Product</div>
@@ -621,11 +451,11 @@ footer{background:var(--navy);padding:40px 0;}
           </div>
           <p style="font-size:14px;color:rgba(255,255,255,0.6);line-height:1.65;margin:0 0 16px;max-width:560px;">AI-curated finance & markets news — 5-layer ethical filters, story-level AI chatbot and personalised daily briefing. Powered by Anthropic Claude.</p>
           <div style="display:flex;gap:6px;flex-wrap:wrap;">
-            <span style="font-family:var(--fd);font-size:10px;font-weight:600;padding:3px 10px;border-radius:100px;background:rgba(37,99,235,0.25);color:#93C5FD;letter-spacing:0.5px;">Claude AI</span>
-            <span style="font-family:var(--fd);font-size:10px;font-weight:600;padding:3px 10px;border-radius:100px;background:rgba(37,99,235,0.25);color:#93C5FD;letter-spacing:0.5px;">React</span>
-            <span style="font-family:var(--fd);font-size:10px;font-weight:600;padding:3px 10px;border-radius:100px;background:rgba(37,99,235,0.25);color:#93C5FD;letter-spacing:0.5px;">Vercel</span>
-            <span style="font-family:var(--fd);font-size:10px;font-weight:600;padding:3px 10px;border-radius:100px;background:rgba(16,185,129,0.2);color:#6EE7B7;letter-spacing:0.5px;">Ethical AI</span>
-            <span style="font-family:var(--fd);font-size:10px;font-weight:600;padding:3px 10px;border-radius:100px;background:rgba(16,185,129,0.2);color:#6EE7B7;letter-spacing:0.5px;">Live News</span>
+            <span style="font-family:var(--fd);font-size:10px;font-weight:600;padding:3px 10px;border-radius:100px;background:rgba(37,99,235,0.25);color:#93C5FD;">Claude AI</span>
+            <span style="font-family:var(--fd);font-size:10px;font-weight:600;padding:3px 10px;border-radius:100px;background:rgba(37,99,235,0.25);color:#93C5FD;">React</span>
+            <span style="font-family:var(--fd);font-size:10px;font-weight:600;padding:3px 10px;border-radius:100px;background:rgba(37,99,235,0.25);color:#93C5FD;">Vercel</span>
+            <span style="font-family:var(--fd);font-size:10px;font-weight:600;padding:3px 10px;border-radius:100px;background:rgba(16,185,129,0.2);color:#6EE7B7;">Ethical AI</span>
+            <span style="font-family:var(--fd);font-size:10px;font-weight:600;padding:3px 10px;border-radius:100px;background:rgba(16,185,129,0.2);color:#6EE7B7;">Live News</span>
           </div>
         </div>
         <div style="text-align:right;flex-shrink:0;" class="pulse-cta">
@@ -637,7 +467,6 @@ footer{background:var(--navy);padding:40px 0;}
   </div>
 </section>
 
-<!-- PROCESS -->
 <section id="process" class="process-sect">
   <div class="wrap">
     <div class="s-chip" style="justify-content:center;">How We Work</div>
@@ -654,17 +483,18 @@ footer{background:var(--navy);padding:40px 0;}
   </div>
 </section>
 
-<!-- PRICING -->
+<!-- ✅ PRICING SECTION — No fixed amounts, Get a Quote CTA -->
 <section id="pricing" style="background:var(--off);">
   <div class="wrap">
     <div class="s-chip">Investment</div>
-    <h2 class="s-h2">Simple, <em>Transparent Pricing</em></h2>
-    <p class="s-p">No hidden costs. Full source code and documentation included in every project.</p>
+    <h2 class="s-h2">Flexible, <em>Tailored Pricing</em></h2>
+    <p class="s-p">Every project is unique. Share your idea and we'll craft a custom quote — no obligation, no pressure.</p>
     <div class="price-grid">
+
       <div class="pc reveal">
-        <div class="pc-plan">Starter Agent</div>
-        <div class="pc-amt">₹15K <span>/ project</span></div>
-        <p class="pc-desc">One focused AI agent or automation workflow, delivered fast.</p>
+        <div class="pc-plan">Starter</div>
+        <div class="pc-tagline">One focused AI solution, built fast.</div>
+        <p class="pc-desc">Perfect for individuals and small businesses looking to add AI to a specific workflow or launch a focused agent.</p>
         <div class="pc-div"></div>
         <ul class="pc-list">
           <li>1 Custom Claude AI Agent</li>
@@ -673,13 +503,14 @@ footer{background:var(--navy);padding:40px 0;}
           <li>7-Day Delivery</li>
           <li>14-Day Support</li>
         </ul>
-        <a href="#contact" class="pc-btn outl">Get Started →</a>
+        <a href="#contact" class="pc-btn outl">💬 Get a Quote →</a>
       </div>
+
       <div class="pc hot reveal d1">
         <div class="pc-badge">Most Popular</div>
-        <div class="pc-plan">Pro Agent Suite</div>
-        <div class="pc-amt">₹45K <span>/ project</span></div>
-        <p class="pc-desc">Multi-agent system with app deployment and full integrations.</p>
+        <div class="pc-plan">Pro</div>
+        <div class="pc-tagline">Full AI system with app & integrations.</div>
+        <p class="pc-desc">For teams and startups ready to deploy a complete multi-agent AI platform with mobile app and custom dashboards.</p>
         <div class="pc-div"></div>
         <ul class="pc-list">
           <li>Multi-Agent Claude System</li>
@@ -689,12 +520,13 @@ footer{background:var(--navy);padding:40px 0;}
           <li>Custom Dashboard</li>
           <li>30-Day Support Included</li>
         </ul>
-        <a href="#contact" class="pc-btn wh">Start Project ⚡</a>
+        <a href="#contact" class="pc-btn wh">⚡ Get a Quote →</a>
       </div>
+
       <div class="pc reveal d2">
         <div class="pc-plan">Enterprise</div>
-        <div class="pc-amt">Custom <span>/ scope</span></div>
-        <p class="pc-desc">Full AI platform for large organizations with compliance needs.</p>
+        <div class="pc-tagline">Full AI platform for large organisations.</div>
+        <p class="pc-desc">For enterprises needing domain-specific AI, compliance-grade security and a dedicated long-term support partner.</p>
         <div class="pc-div"></div>
         <ul class="pc-list">
           <li>Full AI Platform Build</li>
@@ -704,13 +536,14 @@ footer{background:var(--navy);padding:40px 0;}
           <li>SLA & Dedicated Support</li>
           <li>Monthly Retainer Available</li>
         </ul>
-        <a href="#contact" class="pc-btn outl">Contact Us →</a>
+        <a href="#contact" class="pc-btn outl">💬 Get a Quote →</a>
       </div>
+
     </div>
+    <p class="pc-note">🔒 All projects include full source code · No hidden costs · Free first consultation</p>
   </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact" class="contact-sect">
   <div class="wrap">
     <div class="s-chip">Work With Our Studio</div>
@@ -720,7 +553,6 @@ footer{background:var(--navy);padding:40px 0;}
       <div class="contact-info">
         <div class="ci-email reveal">
           <div class="ci-label">📧 Direct Email — Always Open</div>
-          <!-- ✅ UPDATED: hello@axoniva.in → info@axoniva.in -->
           <a href="mailto:info@axoniva.in" class="ci-addr">info@axoniva.in</a>
           <p class="ci-note">Studio response within <strong>4 hours</strong> · Free first consultation · All AI ideas welcome</p>
         </div>
@@ -729,7 +561,6 @@ footer{background:var(--navy);padding:40px 0;}
           <a href="https://twitter.com/axonivaaitech" class="ch-btn">𝕏 Twitter</a>
           <a href="https://instagram.com/axonivaaitech" class="ch-btn">📸 Instagram</a>
           <a href="https://youtube.com/@axonivaaitech" class="ch-btn">▶ YouTube</a>
-          <!-- ✅ UPDATED: hello@axoniva.in → info@axoniva.in -->
           <a href="mailto:info@axoniva.in" class="ch-btn" style="grid-column:span 2;">📧 info@axoniva.in</a>
         </div>
       </div>
@@ -745,16 +576,11 @@ footer{background:var(--navy);padding:40px 0;}
               <label class="fl">Service</label>
               <select class="fsel">
                 <option value="">Select a service...</option>
-                <option>Autonomous AI Agent</option>
-                <option>Intelligent Chatbot</option>
-                <option>AI Android App (Kotlin)</option>
-                <option>AI Android + iOS (Flutter)</option>
-                <option>Android App Idea Consulting</option>
-                <option>Play Store Launch Help</option>
-                <option>AI Webpage Design (48hrs)</option>
-                <option>Workflow Automation</option>
-                <option>Enterprise AI Platform</option>
-                <option>Just an Idea — Need Advice</option>
+                <option>Autonomous AI Agent</option><option>Intelligent Chatbot</option>
+                <option>AI Android App (Kotlin)</option><option>AI Android + iOS (Flutter)</option>
+                <option>Android App Idea Consulting</option><option>Play Store Launch Help</option>
+                <option>AI Webpage Design (48hrs)</option><option>Workflow Automation</option>
+                <option>Enterprise AI Platform</option><option>Just an Idea — Need Advice</option>
               </select>
             </div>
           </div>
@@ -766,12 +592,10 @@ footer{background:var(--navy);padding:40px 0;}
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <div class="wrap">
     <div class="foot">
       <div class="f-brand">AXONIVA <span>AI TECH</span></div>
-      <!-- ✅ UPDATED: hello@axoniva.in → info@axoniva.in -->
       <div class="f-copy">© 2026 Axoniva AI Tech · axoniva.in · Bengaluru, India · <a href="mailto:info@axoniva.in" style="color:rgba(255,255,255,0.3);">info@axoniva.in</a></div>
       <div class="f-tag">One Studio. Infinite Intelligence.</div>
     </div>
@@ -779,75 +603,24 @@ footer{background:var(--navy);padding:40px 0;}
 </footer>
 
 <script>
-/* TERMINAL */
 function initTerminal(){
-  const body=document.getElementById('t-body');
-  if(!body)return;
-  body.innerHTML='';
+  const body=document.getElementById('t-body');if(!body)return;body.innerHTML='';
   const lines=[
-    {t:'cmd',s:'axoniva init --studio'},
-    {t:'out',s:'Initializing Axoniva AI Tech...'},
-    {t:'cmd',s:'claude.connect --model sonnet-4'},
-    {t:'ok', s:'✓ Connected to Anthropic Claude API'},
-    {t:'cmd',s:'studio.load [agents,apps,web,auto]'},
-    {t:'ok', s:'✓ 7 capabilities active'},
-    {t:'cmd',s:'studio.run "build AI solution"'},
-    {t:'warn',s:'⟳ Claude reasoning...'},
-    {t:'ok', s:'✓ Plan created — starting build'},
-    {t:'ok', s:'✓ Delivered in 48hrs. 🎉'},
+    {t:'cmd',s:'axoniva init --studio'},{t:'out',s:'Initializing Axoniva AI Tech...'},
+    {t:'cmd',s:'claude.connect --model sonnet-4'},{t:'ok',s:'✓ Connected to Anthropic Claude API'},
+    {t:'cmd',s:'studio.load [agents,apps,web,auto]'},{t:'ok',s:'✓ 7 capabilities active'},
+    {t:'cmd',s:'studio.run "build AI solution"'},{t:'warn',s:'⟳ Claude reasoning...'},
+    {t:'ok',s:'✓ Plan created — starting build'},{t:'ok',s:'✓ Delivered in 48hrs. 🎉'},
   ];
   let li=0;
-  function mkEl(l){
-    const w=document.createElement('div');w.className='tl';
-    const cls=l.t==='ok'?'tok':l.t==='warn'?'tw':l.t==='cmd'?'tc':'to';
-    if(l.t==='cmd'){w.innerHTML='<span class="tp">$</span><span class="'+cls+'"></span>';}
-    else{w.innerHTML='<span class="'+cls+'"></span>';}
-    body.appendChild(w);return w.querySelector('span:last-child');
-  }
-  function run(){
-    if(li>=lines.length){
-      const c=document.createElement('div');c.className='tl';
-      c.innerHTML='<span class="tp">$</span><span class="tb">█</span>';
-      body.appendChild(c);return;
-    }
-    const l=lines[li];const el=mkEl(l);let ci=0;
-    const iv=setInterval(function(){
-      el.textContent=l.s.slice(0,++ci);body.scrollTop=body.scrollHeight;
-      if(ci>=l.s.length){clearInterval(iv);li++;setTimeout(run,l.t==='cmd'?300:130);}
-    },l.t==='cmd'?45:14);
-  }
+  function mkEl(l){const w=document.createElement('div');w.className='tl';const cls=l.t==='ok'?'tok':l.t==='warn'?'tw':l.t==='cmd'?'tc':'to';if(l.t==='cmd'){w.innerHTML='<span class="tp">$</span><span class="'+cls+'"></span>';}else{w.innerHTML='<span class="'+cls+'"></span>';}body.appendChild(w);return w.querySelector('span:last-child');}
+  function run(){if(li>=lines.length){const c=document.createElement('div');c.className='tl';c.innerHTML='<span class="tp">$</span><span class="tb">█</span>';body.appendChild(c);return;}const l=lines[li];const el=mkEl(l);let ci=0;const iv=setInterval(function(){el.textContent=l.s.slice(0,++ci);body.scrollTop=body.scrollHeight;if(ci>=l.s.length){clearInterval(iv);li++;setTimeout(run,l.t==='cmd'?300:130);}},l.t==='cmd'?45:14);}
   setTimeout(run,600);
 }
-if(document.readyState==='loading'){
-  document.addEventListener('DOMContentLoaded',initTerminal);
-}else{
-  initTerminal();
-}
-
-/* SCROLL REVEAL */
+if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',initTerminal);}else{initTerminal();}
 setTimeout(()=>document.querySelectorAll('.reveal:not(.in)').forEach(el=>el.classList.add('in')),500);
-document.querySelectorAll('.reveal').forEach(el=>{
-  new IntersectionObserver(entries=>entries.forEach(e=>{
-    if(e.isIntersecting){
-      const d=e.target.classList.contains('d3')?300:e.target.classList.contains('d2')?200:e.target.classList.contains('d1')?100:0;
-      setTimeout(()=>e.target.classList.add('in'),d);
-    }
-  }),{threshold:.05,rootMargin:'0px 0px -20px 0px'}).observe(el);
-});
-
-/* FORM */
-function submitForm(e){
-  e.preventDefault();
-  const b=document.getElementById('fsub');
-  b.textContent='✅ Received! We\'ll reply within 4 hours.';
-  b.style.background='#059669';
-  setTimeout(()=>{
-    b.textContent='⚡ Send Your Idea — Let\'s Build It Together';
-    b.style.background='var(--blue2)';
-  },4000);
-}
-
-/* MOBILE MENU */
+document.querySelectorAll('.reveal').forEach(el=>{new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){const d=e.target.classList.contains('d3')?300:e.target.classList.contains('d2')?200:e.target.classList.contains('d1')?100:0;setTimeout(()=>e.target.classList.add('in'),d);}}),{threshold:.05,rootMargin:'0px 0px -20px 0px'}).observe(el);});
+function submitForm(e){e.preventDefault();const b=document.getElementById('fsub');b.textContent='✅ Received! We\'ll reply within 4 hours.';b.style.background='#059669';setTimeout(()=>{b.textContent='⚡ Send Your Idea — Let\'s Build It Together';b.style.background='var(--blue2)';},4000);}
 function toggleMenu(){document.getElementById('mob-menu').classList.toggle('open');}
 function closeMenu(){document.getElementById('mob-menu').classList.remove('open');}
 </script>
